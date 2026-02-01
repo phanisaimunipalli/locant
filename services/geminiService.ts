@@ -4,7 +4,8 @@ import { LocantInsight, TimelineOption } from "../types";
 // Helper to manage local storage for the "3 free searches" requirement
 const STORAGE_KEY = 'locant_search_count';
 // Increased limit for local testing/development
-const MAX_FREE_SEARCHES = 50;
+const MAX_FREE_SEARCHES = parseInt(process.env.MAX_FREE_SEARCHES || '15', 10);
+
 
 export const checkSearchLimit = (): boolean => {
   const count = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
