@@ -1,0 +1,5 @@
+{
+  "name": "Locant",
+  "description": "Minimalist market intelligence tool identifying local demand-supply gaps using Gemini AI.",
+  "requestFramePermissions": []
+}
